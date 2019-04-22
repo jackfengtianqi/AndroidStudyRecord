@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--android:collapseColumns = "0,2"，就是隐藏第一与第三列-->
+    <TableLayout
+        android:id="@+id/TableLayout2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:collapseColumns="0,2" >
+
+        <TableRow>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="one" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="two" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="three" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="four" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="five" />
+        </TableRow>
+    </TableLayout>
+
+    <!--android:stretchColumns = "1"设置第二列为可拉伸列,让该列填满这一行所有的剩余空间-->
+    <TableLayout
+        android:id="@+id/TableLayout3"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="1" >
+
+        <TableRow>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="one" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="two" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="three" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="four" />
+        </TableRow>
+    </TableLayout>
+
+
+    <!--android:shrinkColumns = "1"设置第二个列为可收缩列-->
+    <TableLayout
+        android:id="@+id/TableLayout4"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:shrinkColumns="1" >
+
+        <TableRow>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="one" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="two" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="three" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="four" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="five" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="文本XX" />
+        </TableRow>
+    </TableLayout>
+
+
+
+<!--①调用gravity属性,设置为center_vertical,让布局里面的组件在竖直方向上居中
+
+    ②将TableLayout中的第一和第四列设置为可拉伸
+
+    ③在每个TableRow中添加两个TextView,用于拉伸填满该行,这样可以让表格水平居中
+
+android:stretchColumns="0,3" 设置为0.3，是为了让两边都充满,那么中间部分就可以居中了-->
+
+    <TableLayout
+        android:id="@+id/TableLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:stretchColumns="0,3"
+        android:gravity="center_vertical"
+        android:background="#66FF66"
+        >
+
+        <TableRow>
+            <TextView />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="用户名:"/>
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minWidth="150dp"/>
+            <TextView />
+        </TableRow>
+
+        <TableRow>
+            <TextView />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="密  码:"
+                />
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minWidth="150dp"
+                />
+            <TextView />
+        </TableRow>
+
+        <TableRow>
+            <TextView />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="登陆"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="退出"/>
+            <TextView />
+        </TableRow>
+
+    </TableLayout>
+
+
+
+
+
+
+
+
+
+</TableLayout>

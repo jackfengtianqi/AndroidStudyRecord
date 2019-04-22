@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+
+    <!--<ImageView-->
+        <!--android:id="@+id/img1"-->
+        <!--android:layout_width="80dp"-->
+        <!--android:layout_height="80dp"-->
+        <!--android:layout_centerInParent="true"-->
+        <!--android:src="@drawable/icon_cwgl"/>-->
+    <!--<ImageView-->
+        <!--android:id="@+id/img2"-->
+        <!--android:layout_width="80dp"-->
+        <!--android:layout_height="80dp"-->
+        <!--android:layout_toLeftOf="@id/img1"-->
+        <!--android:layout_centerInParent="true"-->
+        <!--android:src="@drawable/icon_rlzy"/>-->
+
+    <!--<ImageView-->
+        <!--android:id="@+id/img3"-->
+        <!--android:layout_width="80dp"-->
+        <!--android:layout_height="80dp"-->
+        <!--android:layout_toRightOf="@id/img1"-->
+        <!--android:layout_centerInParent="true"-->
+        <!--android:src="@drawable/icon_sjcx"/>-->
+
+    <!--<ImageView-->
+        <!--android:id="@+id/img4"-->
+        <!--android:layout_width="80dp"-->
+        <!--android:layout_height="80dp"-->
+        <!--android:layout_above="@id/img1"-->
+        <!--android:layout_centerInParent="true"-->
+        <!--android:src="@drawable/icon_sshd"/>-->
+
+    <!--<ImageView-->
+        <!--android:id="@+id/img5"-->
+        <!--android:layout_width="80dp"-->
+        <!--android:layout_height="80dp"-->
+        <!--android:layout_below="@id/img1"-->
+        <!--android:layout_centerInParent="true"-->
+        <!--android:src="@drawable/icon_zhzw"/>-->
+
+    <!--首先margin代表的是偏移,比如marginleft = "5dp"表示组件离容器左边缘偏移5dp;
+     而padding代表的则是填充,而填充的对象针对的是组件中的元素,比如TextView中的文字
+     比如为TextView设置paddingleft = "5dp",则是在组件里的元素的左边填充5dp的空间！
+     margin针对的是容器中的组件，而padding针对的是组件中的元素，要区分开来-->
+    <Button
+        android:id="@+id/btn1"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="Button1"/>
+    <Button
+        android:paddingLeft="100dp"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="Button2"
+        android:layout_toRightOf="@id/btn1"/>
+
+    <Button
+        android:id="@+id/btn2"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="Button3"
+        android:layout_alignParentBottom="true"/>
+    <Button
+        android:layout_marginLeft="100dp"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="Button4"
+        android:layout_toRightOf="@id/btn2"
+        android:layout_alignParentBottom="true"/>
+
+
+</RelativeLayout>
