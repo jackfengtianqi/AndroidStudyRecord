@@ -8,50 +8,42 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.example.layoutdemo.MainActivity">
-
-
-    <Button
-        android:id="@+id/btn_login"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="登陆注册" />
-    <Button
-        android:id="@+id/btn_sixlayout"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="六大布局模块" />
+    tools:context="com.example.layoutdemo.LayoutActivity.LayoutActivity">
 
     <Button
-        android:id="@+id/btn_mylayout"
+        android:id="@+id/btn_linear"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="自定义布局模块" />
+        android:text="@string/Linear" />
 
     <Button
-        android:id="@+id/btn_ondraw"
+        android:id="@+id/btn_relative"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="画图模块" />
+        android:text="@string/Realtive" />
 
     <Button
-        android:id="@+id/btn_service"
+        android:id="@+id/btn_my"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="服务模块" />
+        android:text="@string/My" />
 
     <Button
-        android:id="@+id/btn_contact"
+        android:id="@+id/btn_frame"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="获取通讯录模块" />
+        android:text="@string/Frame" />
 
     <Button
-        android:id="@+id/btn_broadcast"
+        android:id="@+id/btn_table"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="广播模块" />
+        android:text="@string/Table" />
 
-
+    <Button
+        android:id="@+id/btn_absolute"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/Absolute" />
 
 </LinearLayout>

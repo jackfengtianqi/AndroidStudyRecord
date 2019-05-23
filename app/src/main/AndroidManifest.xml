@@ -17,22 +17,39 @@
         </activity>
         <activity
             android:name=".LayoutActivity.LinearLayoutActivity"
-            android:label="@string/Linear"></activity>
+            android:label="@string/Linear" />
         <activity
             android:name=".LayoutActivity.RelativeLayoutActivity"
-            android:label="@string/Realtive"></activity>
+            android:label="@string/Realtive" />
         <activity
             android:name=".LayoutActivity.MyLayoutActivity"
-            android:label="@string/My"></activity>
+            android:label="@string/My" />
         <activity
             android:name=".LayoutActivity.FrameLayoutActivity"
-            android:label="@string/Frame"></activity>
+            android:label="@string/Frame" />
         <activity
             android:name=".LayoutActivity.TableLayoutActivity"
-            android:label="@string/Table"></activity>
+            android:label="@string/Table" />
         <activity
             android:name=".LayoutActivity.AbsoluteLayoutActivity"
-            android:label="@string/Absolute"></activity>
+            android:label="@string/Absolute" />
+        <activity android:name=".MyView.MyViewActivity" />
+        <activity android:name=".Service.ServiceActivity" />
+        <activity android:name=".BroadCastReceiver.BroadcastReceiverActivity" />
+        <activity android:name=".ContentProvider.ContentProviderActivity" />
+        <activity android:name=".LayoutActivity.LayoutActivity" />
+        <activity android:name=".ContentProvider.ContactsActivity" />
+        <activity android:name=".sharedpreferencesdemo.SharedpreferencesActivity" />
+        <activity android:name=".sharedpreferencesdemo.LoginActivity" />
+        <activity android:name=".sharedpreferencesdemo.RegisterActivity" />
+        <activity android:name=".sharedpreferencesdemo.WelcomeActivity" />
+        <activity
+            android:name=".BaseActivity"
+            android:label="@string/title_activity_base"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".sqlitedemo.SqliteActivity" />
+        <activity android:name=".mediaplayerdemo.MediaActivity" />
+        <activity android:name=".mediaplayerdemo.VideoActivity"></activity>
     </application>
 
 </manifest>
