@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.layoutdemo.View.ButtonAndImageButtonActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <!--StateListDrawable
+        drawable:引用的Drawable位图,我们可以把他放到最前面,就表示组件的正常状态~
+        state_focused:是否获得焦点
+        state_window_focused:是否获得窗口焦点
+        state_enabled:控件是否可用
+        state_checkable:控件可否被勾选,eg:checkbox
+        state_checked:控件是否被勾选
+        state_selected:控件是否被选择,针对有滚轮的情况
+        state_pressed:控件是否被按下
+        state_active:控件是否处于活动状态,eg:slidingTab
+        state_single:控件包含多个子控件时,确定是否只显示一个子控件
+        state_first:控件包含多个子控件时,确定第一个子控件是否处于显示状态
+        state_middle:控件包含多个子控件时,确定中间一个子控件是否处于显示状态
+        state_last:控件包含多个子控件时,确定最后一个子控件是否处于显示状态
+        -->
+        <Button
+            android:id="@+id/btnOne"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:background="@drawable/btn_bg1"
+            android:text="按钮"/>
+
+
+        <Button
+            android:id="@+id/btnTwo"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:text="按钮不可用"/>
+
+        <!--使用颜色值绘制圆角按钮-->
+
+
+        <!---->
+        <!---->
+        <!---->
+        <!---->
+        <!---->
+        <!---->
+        <!---->
+        <!---->
+        <!---->
+
+
+    </LinearLayout>
+
+</ScrollView>

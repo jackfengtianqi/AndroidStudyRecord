@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.layoutdemo.View.ImageViewActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+    <!--src属性和background属性的区别
+    ①background通常指的都是背景,而src指的是内容!!
+    ②当使用src填入图片时,是按照图片大小直接填充,并不会进行拉伸
+    而使用background填入图片,则是会根据ImageView给定的宽度来进行拉伸
+    -->
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/user" />
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/user" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/user" />
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/user" />
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:src="@drawable/user" />
+
+
+            <!--解决background拉伸导致图片变形的方法
+            方法一：LinearLayout.LayoutParams layoutParam = new LinearLayout.LayoutParams(48, 48);
+            layout.addView(ibtnPen, layoutParam);
+            方法二：通过drawable的Bitmap资源文件来完成,然后blackground属性设置为该文件即可
+            调用方法如下:
+            动态: ibtnPen.setBacklgroundResource(R.drawable.penbg);
+            静态: android:background = "@drawable/penbg"
+            -->
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/pen_bg" />
+
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/user"
+            android:background="#6699FF" />
+
+
+
+
+        <!---->
+    <!---->
+    <!---->
+    <!---->
+    <!---->
+    <!---->
+    <!---->
+    <!---->
+    <!---->
+    <!---->
+
+
+
+    </LinearLayout>
+
+</ScrollView>

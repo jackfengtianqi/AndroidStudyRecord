@@ -6,4 +6,12 @@
     android:layout_height="match_parent"
     tools:context="com.example.layoutdemo.MyView.MyViewActivity">
 
+    <com.example.layoutdemo.MyView.MyButton
+        android:id="@+id/myBtn"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:src="@mipmap/ic_tur_icon"
+        android:background="@color/bottom_bg"
+        android:scaleType="center"/>
+
 </android.support.constraint.ConstraintLayout>

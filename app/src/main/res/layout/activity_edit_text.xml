@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.layoutdemo.View.EditTextActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <!--设置默认提示文本-->
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:hint="设置默认提示文本"
+            android:textColorHint="#95A1AA"
+            />
+
+    <!--获得焦点后全选组件内所有文本内容-->
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:selectAllOnFocus="true"
+            android:text="获得焦点后全选组件内所有文本内容"/>
+
+
+
+    <!--限制EditText输入类型
+    android:inputType="none"
+    android:inputType="text"
+    android:inputType="textCapCharacters"
+    android:inputType="textCapWords"
+    android:inputType="textCapSentences"
+    android:inputType="textAutoCorrect"
+    android:inputType="textAutoComplete"
+    android:inputType="textMultiLine"
+    android:inputType="textImeMultiLine"
+    android:inputType="textNoSuggestions"
+    android:inputType="textUri"
+    android:inputType="textEmailAddress"
+    android:inputType="textEmailSubject"
+    android:inputType="textShortMessage"
+    android:inputType="textLongMessage"
+    android:inputType="textPersonName"
+    android:inputType="textPostalAddress"
+    android:inputType="textPassword"
+    android:inputType="textVisiblePassword"
+    android:inputType="textWebEditText"
+    android:inputType="textFilter"
+    android:inputType="textPhonetic"
+
+    数值类型
+    android:inputType="number"
+    android:inputType="numberSigned"
+    android:inputType="numberDecimal"
+    android:inputType="phone"//拨号键盘
+    android:inputType="datetime"
+    android:inputType="date"//日期键盘
+    android:inputType="time"//时间键盘
+    -->
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:inputType="phone"
+            android:text=""
+            android:hint="限制EditText输入类型(电话)"/>
+
+    <!--设置最小行，最多行，单行，多行，自动换行
+    我们可以对其进行限制，比如
+    设置最小行的行数：android:minLines="3"
+    或者设置EditText最大的行数：android:maxLines="3"
+    PS:当输入内容超过maxline,文字会自动向上滚动！！
+    -->
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:singleLine="true"
+            android:minLines="3"
+            android:maxLines="5"/>
+
+
+    <!--设置文字间隔，设置英文字母大写类型
+    android:textScaleX="1.5"    //设置字与字的水平间隔
+    android:textScaleY="1.5"    //设置字与字的垂直间隔
+    设置英文字母大写类型的属性：android:capitalize 默认none,三个可选值
+    sentences：仅第一个字母大写
+    words：每一个单词首字母大小，用空格区分单词
+    characters:每一个英文字母都大写
+    -->
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="设置字的间距"/>
+
+    <!--控制EditText四周的间隔距离与内部文字与边框间的距离
+    我们使用margin相关属性增加组件相对其他控件的距离，
+    比如android:marginTop = "5dp" 使用padding增加组件内文字和组件边框的距离，
+    比如android:paddingTop = "5dp"
+    -->
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:padding="10dp"
+            android:text="控制EditText四周的间隔距离与内部文字与边框间的距离"/>
+
+
+
+    <!--设置EditText获得焦点，同时弹出小键盘
+
+    -->
+
+        <EditText
+            android:id="@+id/et_text"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:focusable="true"
+            android:text="设置EditText获得焦点，同时弹出小键盘"/>
+
+
+    <!--EditText光标位置的控制
+    一个参数的是设置光标位置的，两个参数的是设置起始位置与结束位置的中间括的部分，即部分选中！
+    当然我们也可以调用setSelectAllOnFocus(true);让EditText获得焦点时选中全部文本！
+    另外我们还可以调用setCursorVisible(false);设置光标不显示
+    还可以调用getSelectionStart()和getSelectionEnd获得当前光标的前后位置
+    -->
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:selectAllOnFocus="true"
+            android:text="EditText光标位置的控制"/>
+
+    <!--带表情的EditText的简单实现
+    1.使用SpannableString来实现
+    2.使用Html类来实现
+    -->
+        <EditText
+            android:id="@+id/et_one"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+        <Button
+            android:id="@+id/btn_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="添加表情"/>
+
+
+        <!--带删除按钮的EditText
+
+        -->
+
+
+
+
+
+
+    </LinearLayout>
+
+</ScrollView>

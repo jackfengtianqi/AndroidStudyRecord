@@ -17,6 +17,11 @@
         android:layout_height="wrap_content"
         android:text="登陆注册" />
     <Button
+        android:id="@+id/btn_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="基础组件" />
+    <Button
         android:id="@+id/btn_sixlayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -51,6 +56,16 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="广播模块" />
+    <Button
+        android:id="@+id/btn_myview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="水波纹效果" />
+    <Button
+        android:id="@+id/btn_fileview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="文件预览" />
 
 
 
